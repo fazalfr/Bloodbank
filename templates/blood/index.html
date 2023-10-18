@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .xyz {
+      margin-bottom: 0px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+</head>
+
+<body>
+  {% include "blood/navbar.html" %}
+  <br>
+  <section id="section-jumbotron" style="margin-bottom: 0px;"
+    class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+    <div class="container text-center">
+    </div>
+  </section>
+
+  <div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
+    <p class="lead text-center">Welcome To Blood Bank Management System</p>
+
+    <p class="text-center">- Available Features:</p>
+    <div class="text-center">
+      <a href="/" class="btn btn-primary">Home</a>
+      <a href="/patient/patientlogin" class="btn btn-success">Patient Login</a>
+      <a href="/donor/donorlogin" class="btn btn-warning">Donor Login</a>
+      <a href="/adminlogin" class="btn btn-danger">Admin Login</a>
+    </div>
+  </div>
+</body>
+</html>
